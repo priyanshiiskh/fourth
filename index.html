@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Lee | Senior Data Analyst</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: { 900: '#0f172a', 800: '#1e293b', 700: '#334155' }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-xl tracking-tight text-white">priyanshi<span class="text-cyan-400">.sql</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Expertise</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </div>
+            <a href="#contact" class="bg-cyan-500 text-slate-950 px-4 py-2 rounded-lg text-sm font-bold hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/10">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="max-w-6xl mx-auto px-6 py-24 md:py-36 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-terminal"></i> SQL • Python • Tableau </div>
+            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-tight">
+                Transforming raw data into <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">strategic clarity</span>.
+            </h1>
+            <p class="text-slate-400 text-lg max-w-xl mx-auto md:mx-0">
+                I help companies optimize performance and uncover hidden growth opportunities through advanced data modeling, insightful visualizations, and clean pipelines.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+                <a href="#projects" class="bg-cyan-500 text-slate-950 px-6 py-3 rounded-xl font-bold hover:bg-cyan-400 transition flex items-center gap-2">
+                    <i class="fa-solid fa-folder-open"></i> Explore Work
+                </a>
+                <a href="#skills" class="border border-slate-700 bg-slate-800/50 text-slate-200 px-6 py-3 rounded-xl font-medium hover:bg-slate-800 transition">
+                    View Stack
+                </a>
+            </div>
+        </div>
+        <div class="w-full md:w-96 p-6 rounded-2xl bg-slate-800 border border-slate-700/80 shadow-2xl font-mono text-xs text-slate-300 space-y-3">
+            <div class="flex items-center gap-2 pb-2 border-b border-slate-700">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                <span class="text-slate-500 ml-2">metrics_query.sql</span>
+            </div>
+            <p class="text-purple-400">SELECT <span class="text-white">customer_segment</span>,</p>
+            <p class="pl-4 text-cyan-400">SUM(revenue) AS total_rev,</p>
+            <p class="pl-4 text-cyan-400">AVG(churn_rate) AS avg_churn</p>
+            <p class="text-purple-400">FROM <span class="text-white">enterprise_db.subscriptions</span></p>
+            <p class="text-purple-400">WHERE <span class="text-white">fiscal_year</span> = 2026</p>
+            <p class="text-purple-400">GROUP BY 1 ORDER BY 2 DESC;</p>
+        </div>
+    </header>
+
+    <!-- Expertise Section -->
+    <section id="skills" class="py-20 bg-slate-950/50 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+                <h2 class="text-3xl font-bold text-white">Core Competencies</h2>
+                <p class="text-slate-400">Technical proficiencies built for enterprise data environments.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/60 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Database & Querying</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Expertise in writing optimized SQL, handling complex joins, creating window functions, and scaling queries across Snowflake and BigQuery.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/60 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Python Scripting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Automating data cleaning, performing exploratory data analysis (EDA), and building machine learning models using Pandas, NumPy, and Scikit-Learn.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/60 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Dashboards</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Translating business metrics into intuitive, executive-ready dashboards in Tableau and Power BI that drive stakeholder alignment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+            <h2 class="text-3xl font-bold text-white">Featured Projects</h2>
+            <p class="text-slate-400">Real-world case studies showcasing methodology and business results.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-800/40 rounded-3xl border border-slate-700 p-8 flex flex-col justify-between space-y-6 hover:border-cyan-500/50 transition">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">SaaS Growth</span>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Subscription Retention & Lifecycle Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Analyzed 250k user event logs using PostgreSQL and Python. Identified key drop-off points in the onboarding workflow, leading to UX updates that decreased monthly churn by 4.2%.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">SQL</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Python (Pandas)</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Tableau</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/40 rounded-3xl border border-slate-700 p-8 flex flex-col justify-between space-y-6 hover:border-cyan-500/50 transition">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Market Intelligence</span>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Automated Web Scraping & Pricing Strategy Pipeline</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Developed a scheduled Python web scraper using BeautifulSoup and Requests to track competitor pricing changes daily. Stored metrics in BigQuery for weekly dynamic pricing analysis.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Python</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">BigQuery</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Power BI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 max-w-4xl mx-auto px-6 text-center">
+        <div class="bg-gradient-to-br from-slate-800 to-slate-850 border border-slate-700 rounded-3xl p-12 space-y-6 shadow-2xl">
+            <h2 class="text-3xl font-bold text-white">Let's Connect</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">
+                Looking for a dedicated Data Analyst to join your team or collaborate on a project? Drop me a message!
+            </p>
+            <div class="flex justify-center gap-4 pt-4">
+                <a href="mailto:jordan.lee.data@gmail.com" class="bg-cyan-500 text-slate-950 px-6 py-3 rounded-xl font-bold hover:bg-cyan-400 transition flex items-center gap-2">
+                    <i class="fa-regular fa-envelope"></i> Email Me
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="bg-slate-700 text-white px-6 py-3 rounded-xl font-medium hover:bg-slate-600 transition flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Jordan Lee. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html> -->
